@@ -1,181 +1,396 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الملتقى الوطني: أهمية اللغات الأجنبية والترجمة في تعزيز السياحة الصحراوية</title>
-    <meta name="description"
-        content="الملتقى الوطني حول أهمية اللغات الأجنبية والترجمة في تعزيز السياحة الصحراوية بمنطقتي الهقار وتيديكلت - جامعة تمنراست">
+    <title>ملتقى اللغات الأجنبية والسياحة الصحراوية</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap');
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="index.css">
-
-    <!-- Icons (using simple text or SVGs later, sticking to CSS based for now or placeholder) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        body {
+            font-family: 'Tajawal', sans-serif;
+        }
+    </style>
 </head>
 
-<body>
+<body class="bg-stone-50 text-gray-800">
 
-    <!-- 1. Header with Logos -->
-    <header class="top-header">
-        <div class="container logos-container">
-            <div class="logo-box">
-                <div class="logo-placeholder">وزارة التعليم العالي والبحث العلمي</div>
+    <header class="bg-white py-6 border-b border-orange-100 shadow-sm">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="w-32 text-center">
+                <p class="text-[10px] font-bold text-gray-500 mb-2">كلية الآداب واللغات</p>
+                <img src="assets/logos/faculty.jpeg" alt="شعار الكلية" class="h-16 mx-auto">
             </div>
-            <div class="logo-box">
-                <div class="logo-placeholder">جامعة تمنراست</div>
+            <div class="w-48 text-center border-x border-orange-100 px-4">
+                <p class="text-xs font-bold text-orange-800 mb-2 italic">جامعة تامنغست</p>
+                <img src="assets/logos/univ.jpg" alt="شعار الجامعة" class="h-20 mx-auto">
             </div>
-            <div class="logo-box">
-                <div class="logo-placeholder">مخبر الممارسات اللغوية</div>
+            <div class="w-32 text-center">
+                <p class="text-[10px] font-bold text-gray-500 mb-2 text-wrap">مخبر الممارسات اللغوية</p>
+                <img src="assets/logos/lab.png" alt="شعار المخبر" class="h-16 mx-auto">
             </div>
         </div>
     </header>
 
-    <!-- 2. Navigation -->
-    <nav class="main-nav">
-        <div class="container nav-container">
-            <ul class="nav-links">
-                <li><a href="#hero">الرئيسية</a></li>
-                <li><a href="#logistics">عن الملتقى</a></li>
-                <li><a href="#committee">اللجنة العلمية</a></li>
-                <li><a href="#organizers">اللجنة التنظيمية</a></li>
-                <li><a href="#gallery">معرض الصور</a></li>
-                <li><a href="#register">التسجيل</a></li>
-            </ul>
+    <nav class="sticky top-0 bg-orange-900 text-white z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-center gap-6 text-sm md:text-base font-medium">
+            <a href="#about" class="hover:text-orange-300 transition-colors">عن الملتقى</a>
+            <a href="#details" class="hover:text-orange-300 transition-colors">الزمان والمكان</a>
+            <a href="#supervisors" class="hover:text-orange-300 transition-colors">الهيئات المشرفة</a>
+            <a href="#contact" class="hover:text-orange-300 transition-colors">اتصل بنا</a>
+            <a href="#download"
+                class="hover:text-orange-300 transition-colors underline decoration-orange-500 underline-offset-8">برنامج
+                الملتقى</a>
         </div>
     </nav>
 
-    <!-- 3. Hero Section -->
-    <section id="hero" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <h1 class="hero-title">أهمية اللغات الأجنبية والترجمة في تعزيز السياحة الصحراوية<br>بمنطقتي الهقار وتيديكلت
+    <section id="about"
+        class="py-20 bg-[url('https://images.unsplash.com/photo-1509316785289-025f5b846b35?q=80&w=2076&auto=format&fit=crop')] bg-cover bg-fixed relative">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="container mx-auto px-6 relative text-center text-white">
+            <span class="bg-orange-600 px-4 py-1 rounded-full text-sm font-bold mb-4 inline-block">ملتقى وطني حضوري وعن
+                بعد</span>
+            <h1 class="text-3xl md:text-5xl font-black leading-tight mb-8 max-w-4xl mx-auto">
+                أهمية اللغات الأجنبية والترجمة في النهوض بالواقع السياحي الصحراوي في منطقتي الهقار والتيديكلت
             </h1>
-            <p class="hero-description">ملتقى وطني يجمع الخبراء والباحثين لاستكشاف دور الترجمة واللغات في بناء جسور
-                التواصل الثقافي وتعزيز الجاذبية السياحية للجنوب الجزائري الكبير.</p>
+            <p class="text-lg md:text-xl text-stone-200 max-w-3xl mx-auto leading-relaxed">
+                يسعى الملتقى لإبراز دور اللغات الأجنبية والترجمة في تسهيل التواصل واستقطاب الوكالات السياحية الأجنبية
+                للجنوب الكبير، والنهوض بالسياحة الطبيعية والثقافية.
+            </p>
         </div>
     </section>
 
-    <!-- 4. Logistics Block -->
-    <div class="container">
-        <section id="logistics" class="logistics">
-            <div class="logistics-grid">
-                <div class="logistics-item">
-                    <div class="icon-box"><i class="far fa-calendar-alt"></i></div>
-                    <h3>تاريخ الانعقاد</h3>
-                    <p>01 فيفري 2026</p>
-                </div>
-                <div class="logistics-item">
-                    <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
-                    <h3>المكان</h3>
-                    <p>قاعة المحاضرات الكبرى<br>جامعة تمنراست</p>
-                </div>
-                <div class="logistics-item">
-                    <div class="icon-box"><i class="far fa-clock"></i></div>
-                    <h3>التوقيت</h3>
-                    <p>09:00 صباحاً - 05:00 مساءً</p>
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="mb-16">
+                <h2 class="text-3xl font-black mb-6 text-orange-900 border-r-8 border-orange-500 pr-4">إشكالية الملتقى
+                </h2>
+                <p class="text-lg text-gray-700 leading-relaxed max-w-4xl mb-6">
+                    يسعى الملتقى إلى معالجة الدور المحوري للغات والترجمة في تثمين السياحة الصحراوية، متمحوراً حول
+                    التساؤلات التالية:
+                </p>
+                <div class="bg-orange-50 rounded-2xl p-8 border border-orange-100 shadow-sm">
+                    <ul class="grid gap-4 text-stone-800 font-medium md:grid-cols-2">
+                        <li class="flex gap-3">
+                            <i class="fas fa-question-circle text-orange-500 mt-1"></i>
+                            <span>كيف يمكن توظيف اللغات الأجنبية كرافعة أساسية للنهوض بالسياحة في منطقتي الهقار
+                                والتيديكلت؟</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="fas fa-question-circle text-orange-500 mt-1"></i>
+                            <span>ما هو الدور الاستراتيجي للترجمة في جذب السياح وتعزيز تنافسية الجنوب الكبير كوجهة
+                                عالمية؟</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="fas fa-question-circle text-orange-500 mt-1"></i>
+                            <span>كيف يساهم المرشدون والمترجمون في تأمين وتوجيه السياح الأجانب عبر المسارات والمواصلات
+                                الصحراوية؟</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="fas fa-question-circle text-orange-500 mt-1"></i>
+                            <span>ما هي أهمية التكامل بين اللغات المحلية (التارقية بلهجاتها) واللغات الأجنبية في إعداد
+                                جيل من المترجمين المتخصصين؟</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
-    </div>
 
-    <!-- 5. Scientific Committee -->
-    <section id="committee" class="section committee">
-        <div class="container">
-            <h2 class="section-title">اللجنة العلمية</h2>
-            <div class="speakers-grid">
-                <div class="speaker-card">
-                    <img src="https://placehold.co/150x150/e0e0e0/333?text=د.حمزة" alt="د. حمزة بن عشرين"
-                        class="speaker-img">
-                    <h3 class="speaker-name">د. حمزة بن عشرين</h3>
-                    <p class="speaker-title">رئيس اللجنة العلمية</p>
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Objectives -->
+                <div>
+                    <h2 class="text-2xl font-black mb-6 text-orange-800 flex items-center gap-3">
+                        <i
+                            class="fas fa-bullseye bg-orange-100 p-3 rounded-full w-12 h-12 flex items-center justify-center"></i>
+                        أهداف الملتقى
+                    </h2>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-orange-500 mt-1 text-lg"></i>
+                            <span>تسليط الضوء على المقومات السياحية الفريدة للصحراء الجزائرية، لا سيما في منطقتي الهقار
+                                والتيديكلت.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-orange-500 mt-1 text-lg"></i>
+                            <span>تحليل فاعلية تعليم اللغات الأجنبية والترجمة وأثرهما المباشر في تطوير الاستثمار السياحي
+                                بالجنوب.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-orange-500 mt-1 text-lg"></i>
+                            <span>استشراف آفاق السياحة في المنطقة في ظل المشاريع الهيكلية الكبرى، كـ "الطريق العابر
+                                للصحراء" ومشروع "السكة الحديدية" (البليدة-تمنراست-عين قزام).</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="speaker-card">
-                    <img src="https://placehold.co/150x150/e0e0e0/333?text=د.تكرمبلت" alt="د. تكرمبلت محمد مزيان"
-                        class="speaker-img">
-                    <h3 class="speaker-name">د. تكرمبلت محمد مزيان</h3>
-                    <p class="speaker-title">عضو اللجنة العلمية</p>
-                </div>
-                <!-- Add more placeholders for visuals -->
-                <div class="speaker-card">
-                    <img src="https://placehold.co/150x150/e0e0e0/333?text=أ.د.سعاد" alt="أ.د. سعاد"
-                        class="speaker-img">
-                    <h3 class="speaker-name">أ.د. سعاد منصوري</h3>
-                    <p class="speaker-title">جامعة الجزائر 2</p>
-                </div>
-                <div class="speaker-card">
-                    <img src="https://placehold.co/150x150/e0e0e0/333?text=د.كريم" alt="د. كريم" class="speaker-img">
-                    <h3 class="speaker-name">د. كريم بوعزيز</h3>
-                    <p class="speaker-title">جامعة ورقلة</p>
+                <!-- Themes -->
+                <div>
+                    <h2 class="text-2xl font-black mb-6 text-orange-800 flex items-center gap-3">
+                        <i
+                            class="fas fa-layer-group bg-orange-100 p-3 rounded-full w-12 h-12 flex items-center justify-center"></i>
+                        محاور الملتقى
+                    </h2>
+                    <div class="grid gap-4">
+                        <div
+                            class="bg-stone-50 p-4 rounded-xl border-r-4 border-orange-400 shadow-sm hover:shadow-md transition">
+                            <strong class="text-stone-900 block mb-1">المحور الأول:</strong>
+                            <span class="text-gray-600">واقع القطاع السياحي في الجزائر: التحديات والفرص.</span>
+                        </div>
+                        <div
+                            class="bg-stone-50 p-4 rounded-xl border-r-4 border-orange-400 shadow-sm hover:shadow-md transition">
+                            <strong class="text-stone-900 block mb-1">المحور الثاني:</strong>
+                            <span class="text-gray-600">أنماط السياحة الصحراوية (الاستكشافية، الأثرية، الدينية،
+                                الرياضية، والاستجمامية).</span>
+                        </div>
+                        <div
+                            class="bg-stone-50 p-4 rounded-xl border-r-4 border-orange-400 shadow-sm hover:shadow-md transition">
+                            <strong class="text-stone-900 block mb-1">المحور الثالث:</strong>
+                            <span class="text-gray-600">الخصوصية السياحية لمنطقتي الهقار والتيديكلت.</span>
+                        </div>
+                        <div
+                            class="bg-stone-50 p-4 rounded-xl border-r-4 border-orange-400 shadow-sm hover:shadow-md transition">
+                            <strong class="text-stone-900 block mb-1">المحور الرابع:</strong>
+                            <span class="text-gray-600">العلاقة الوظيفية بين اللغات الأجنبية، الترجمة، والنشاط
+                                السياحي.</span>
+                        </div>
+                        <div
+                            class="bg-stone-50 p-4 rounded-xl border-r-4 border-orange-400 shadow-sm hover:shadow-md transition">
+                            <strong class="text-stone-900 block mb-1">المحور الخامس:</strong>
+                            <span class="text-gray-600">المواقع السياحية المصنفة عالمياً في الجنوب الجزائري.</span>
+                        </div>
+                        <div
+                            class="bg-stone-50 p-4 rounded-xl border-r-4 border-orange-400 shadow-sm hover:shadow-md transition">
+                            <strong class="text-stone-900 block mb-1">المحور السادس:</strong>
+                            <span class="text-gray-600">آليات استثمار المهارات اللغوية لترقية السياحة وتحقيق التنمية
+                                المستدامة في الجنوب.</span>
+                        </div>
+                        <div
+                            class="bg-stone-50 p-4 rounded-xl border-r-4 border-orange-400 shadow-sm hover:shadow-md transition">
+                            <strong class="text-stone-900 block mb-1">المحور السابع:</strong>
+                            <span class="text-gray-600">دور الوكالات السياحية في تفعيل الحركية الاقتصادية بمنطقتي الهقار
+                                والتيديكلت.</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 6. Organizers Section -->
-    <section id="organizers" class="section organizers">
-        <div class="container">
-            <h2 class="section-title">اللجنة التنظيمية</h2>
-            <div class="organizers-list">
-                <div class="organizer-item director-badge">مدير الملتقى: أ.د. بابكر عبد القادر</div>
-                <div class="organizer-item">طلبة الدكتوراه (لغة إنجليزية)</div>
-                <div class="organizer-item">رئيس القسم</div>
-                <div class="organizer-item">النادي العلمي</div>
-                <div class="organizer-item">فريق الإعلام والاتصال</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 7. Photo Gallery -->
-    <section id="gallery" class="section gallery">
-        <div class="container">
-            <h2 class="section-title">معرض الصور</h2>
-            <p style="text-align: center; margin-bottom: 2rem; color: #666;">لمحات من جمال الهقار وتيديكلت</p>
-            <div class="masonry-grid">
-                <!-- Using placeholder.co with varying heights to simulate masonry -->
-                <div class="masonry-item"><img src="https://placehold.co/400x300/C5A059/fff?text=Tassili+Art"
-                        alt="Gallery 1"></div>
-                <div class="masonry-item"><img src="https://placehold.co/400x500/37474F/fff?text=Hoggar+Sunset"
-                        alt="Gallery 2"></div>
-                <div class="masonry-item"><img src="https://placehold.co/400x400/2979FF/fff?text=Desert+Dunes"
-                        alt="Gallery 3"></div>
-                <div class="masonry-item"><img src="https://placehold.co/400x600/C5A059/fff?text=Landscape"
-                        alt="Gallery 4"></div>
-                <div class="masonry-item"><img src="https://placehold.co/400x350/37474F/fff?text=Tradition"
-                        alt="Gallery 5"></div>
-                <div class="masonry-item"><img src="https://placehold.co/400x450/2979FF/fff?text=Tourism"
-                        alt="Gallery 6"></div>
-                <div class="masonry-item"><img src="https://placehold.co/400x300/C5A059/fff?text=Event" alt="Gallery 7">
+    <section id="details" class="py-16 bg-white border-b">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="flex items-center p-6 bg-stone-50 rounded-2xl border-r-4 border-orange-600">
+                    <i class="fas fa-calendar-day text-3xl text-orange-600 ml-4"></i>
+                    <div>
+                        <h3 class="font-bold text-xl">تاريخ الانعقاد</h3>
+                        <p class="text-gray-600">08 -09 فيفري 2026</p>
+                    </div>
                 </div>
-                <div class="masonry-item"><img src="https://placehold.co/400x400/37474F/fff?text=Camels"
-                        alt="Gallery 8"></div>
+                <div class="flex items-center p-6 bg-stone-50 rounded-2xl border-r-4 border-orange-600">
+                    <i class="fas fa-map-marker-alt text-3xl text-orange-600 ml-4"></i>
+                    <div>
+                        <h3 class="font-bold text-xl">الموقع</h3>
+                        <p class="text-gray-600">قاعة المحاضرات الكبرى - جامعة تامنغست</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- 8. CTA Section -->
-    <section id="register" class="cta-section">
-        <div class="container">
-            <h2 style="margin-bottom: 1rem;">انضم إلينا في هذا الحدث العلمي المتميز</h2>
-            <p>للمشاركة والحضور، يرجى تحميل البرنامج أو ملء استمارة التسجيل</p>
-            <div class="cta-buttons">
-                <button class="btn btn-secondary">
-                    <i class="fas fa-file-pdf"></i> تحميل البرنامج
-                </button>
-                <a href="https://h7.cl/1ifbs" class="btn btn-primary" target="_blank">
-                    <i class="fas fa-pen-square"></i> استمارة التسجيل
+    <section id="supervisors" class="py-20 bg-stone-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-black text-stone-900 border-b-2 border-orange-600 inline-block pb-2">
+                    الهيئات المشرفة على الملتقى
+                </h2>
+            </div>
+
+            <div class="max-w-6xl mx-auto space-y-8">
+                <!-- Honorary President -->
+                <div
+                    class="bg-white p-8 rounded-3xl shadow-md border border-stone-100 flex flex-col md:flex-row items-center gap-6 text-center md:text-right hover:shadow-xl transition relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-2 h-full bg-orange-600"></div>
+                    <div
+                        class="w-24 h-24 bg-orange-100 rounded-full flex items-center justify-center border-4 border-white shadow-sm shrink-0">
+                        <img src="assets/person/bnlabad.jpeg" alt="أ.د. بن لباد الغالي"
+                            class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <div>
+                        <span
+                            class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-xs font-bold mb-2 inline-block">الرئيس
+                            الشرفي للملتقى</span>
+                        <h3 class="text-2xl font-bold text-stone-900">أ.د. بن لباد الغالي</h3>
+                        <p class="text-gray-600 mt-1">المكلف بتسيير إدارة مديرية جامعة تامنغست <br> عميد كلية الآداب
+                            واللغات</p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Colloquium President -->
+                    <div
+                        class="bg-white p-8 rounded-3xl shadow-sm border border-stone-100 text-center hover:shadow-lg transition group">
+                        <div
+                            class="w-20 h-20 bg-orange-50 rounded-full mx-auto mb-4 flex items-center justify-center group-hover:bg-orange-100 transition">
+                            <img src="assets/person/hamza.jpeg" alt="د. بن عشرين حمزة"
+                                class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <h3 class="text-xl font-bold text-stone-900 mb-1">د. بن عشرين حمزة</h3>
+                        <p class="text-orange-600 font-medium text-sm mb-2">رئيس الملتقى</p>
+                    </div>
+
+                    <!-- Scientific Committee President -->
+                    <div
+                        class="bg-white p-8 rounded-3xl shadow-sm border border-stone-100 text-center hover:shadow-lg transition group">
+                        <div
+                            class="w-20 h-20 bg-orange-50 rounded-full mx-auto mb-4 flex items-center justify-center group-hover:bg-orange-100 transition">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150"
+                                alt="د. تاكرومبالت" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <h3 class="text-xl font-bold text-stone-900 mb-1">د. تاكرومبالت محمد أمزيان</h3>
+                        <p class="text-orange-600 font-medium text-sm mb-2">رئيس الهيئة العلمية</p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- General Supervision -->
+                    <div
+                        class="bg-white p-8 rounded-3xl shadow-sm border border-stone-100 text-center hover:shadow-lg transition group">
+                        <div
+                            class="w-20 h-20 bg-orange-50 rounded-full mx-auto mb-4 flex items-center justify-center group-hover:bg-orange-100 transition">
+                            <img src="assets/person/babkar.jpeg" alt="د. بابكر عبد القادر"
+                                class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <h3 class="text-xl font-bold text-stone-900 mb-1">د. بابكر عبد القادر</h3>
+                        <p class="text-orange-600 font-medium text-sm mb-2">الإشراف العام</p>
+                        <p class="text-xs text-gray-500 leading-relaxed max-w-xs mx-auto">مدير مخبر الممارسات اللغوية
+                            والأدبية بالمناطق الصحراوية الجزائرية وامتداداتها بالساحل الإفريقي</p>
+                    </div>
+
+                    <!-- Organizing Committee President -->
+                    <div
+                        class="bg-white p-8 rounded-3xl shadow-sm border border-stone-100 text-center hover:shadow-lg transition group">
+                        <div
+                            class="w-20 h-20 bg-orange-50 rounded-full mx-auto mb-4 flex items-center justify-center group-hover:bg-orange-100 transition">
+                            <img src="assets/person/ghalem.jpeg" alt="د. غالم محمد"
+                                class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <h3 class="text-xl font-bold text-stone-900 mb-1">د. غالم محمد</h3>
+                        <p class="text-orange-600 font-medium text-sm mb-2">رئيس اللجنة التنظيمية</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-20 bg-stone-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-black text-white text-center mb-12">اكتشف جمال الهقار والتيديكلت</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <img src="assets/images/Assekrem-01.jpg"
+                    class="rounded-xl h-60 w-full object-cover hover:opacity-75 transition cursor-pointer shadow-2xl">
+                <img src="assets/images/img-circuit-2.jpg"
+                    class="rounded-xl h-60 w-full object-cover hover:opacity-75 transition cursor-pointer shadow-2xl">
+                <img src="assets/images/img-circuit-3.jpg"
+                    class="rounded-xl h-60 w-full object-cover hover:opacity-75 transition cursor-pointer shadow-2xl">
+                <img src="assets/images/img-tefedest-01.jpg"
+                    class="rounded-xl h-60 w-full object-cover hover:opacity-75 transition cursor-pointer shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+  <!--  <section id="sponsors" class="py-12 bg-white"> 
+        <div class="container mx-auto px-6">
+            <h2 class="text-2xl font-black text-center mb-8 text-stone-900">رعاة الملتقى</h2>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-14">
+                <img src="assets/logos/soponsor (sb).jpg" alt="Smart Bytes"
+                    class="h-20 md:h-28 object-contain hover:scale-110 transition-transform duration-300">
+                <img src="assets/logos/soponsor (1).jpeg" alt="Sponsor 1"
+                    class="h-20 md:h-28 object-contain hover:scale-110 transition-transform duration-300">
+                <img src="assets/logos/soponsor (2).jpeg" alt="Sponsor 2"
+                    class="h-20 md:h-28 object-contain hover:scale-110 transition-transform duration-300">
+                <img src="assets/logos/soponsor (3).jpeg" alt="Sponsor 3"
+                    class="h-20 md:h-28 object-contain hover:scale-110 transition-transform duration-300">
+                <img src="assets/logos/soponsor (4).jpeg" alt="Sponsor 4"
+                    class="h-20 md:h-28 object-contain hover:scale-110 transition-transform duration-300">
+                <img src="assets/logos/soponsor (5).jpeg" alt="Sponsor 5"
+                    class="h-20 md:h-28 object-contain hover:scale-110 transition-transform duration-300">
+            </div>
+        </div>
+    </section> -->
+ 
+    <section id="contact" class="py-16 bg-stone-50 border-t border-stone-200 text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-black mb-10 text-stone-900">تواصل معنا</h2>
+            <div class="flex flex-wrap justify-center gap-6">
+                <div
+                    class="flex items-center gap-4 bg-white px-8 py-5 rounded-2xl shadow-sm border border-stone-100 hover:border-orange-200 transition">
+                    <div
+                        class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center text-orange-600 text-xl">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-xs text-gray-500 font-bold mb-1">البريد الإلكتروني</p>
+                        <a href="mailto:seminar@univ-tam.dz"
+                            class="text-lg font-bold text-gray-800 hover:text-orange-600 transition">seminar@univ-tam.dz</a>
+                    </div>
+                </div>
+
+                <div
+                    class="flex items-center gap-4 bg-white px-8 py-5 rounded-2xl shadow-sm border border-stone-100 hover:border-orange-200 transition">
+                    <div
+                        class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center text-orange-600 text-xl">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-xs text-gray-500 font-bold mb-1">الهاتف</p>
+                        <a href="tel:+21329000000"
+                            class="text-lg font-bold text-gray-800 hover:text-orange-600 transition">029.00.00.00</a>
+                    </div>
+                </div>
+
+                <div
+                    class="flex items-center gap-4 bg-white px-8 py-5 rounded-2xl shadow-sm border border-stone-100 hover:border-orange-200 transition">
+                    <div
+                        class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center text-orange-600 text-xl">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-xs text-gray-500 font-bold mb-1">العنوان</p>
+                        <p class="text-lg font-bold text-gray-800">جامعة تامنغست - ص.ب 1003</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download"
+        class="py-24 bg-gradient-to-r from-orange-800 to-orange-950 text-white text-center relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <h2 class="text-4xl font-black mb-10">الاطلاع على التفاصيل</h2>
+            <div class="flex flex-col md:flex-row justify-center gap-6">
+                <a href="assets/downloads/برنامج الملتقى 2026.pdf" download
+                    class="bg-white text-orange-900 px-10 py-5 rounded-2xl font-black text-lg hover:bg-orange-100 transition shadow-2xl flex items-center justify-center">
+                    <i class="fas fa-file-pdf ml-3 text-2xl"></i> تحميل برنامج الملتقى
+                </a>
+                <a href="assets/downloads/أهمية-اللغات-الأجنبية-و-الترجمة-في-النهوض-بالواقع-السياحي-الصحراوي-في-منطقتي-الهقار-و-التيديكلت (1).pdf"
+                    download
+                    class="bg-orange-600 text-white border-2 border-orange-500 px-10 py-5 rounded-2xl font-black text-lg hover:bg-orange-500 transition shadow-2xl flex items-center justify-center">
+                    <i class="fas fa-file-alt ml-3 text-2xl"></i> تحميل ديباجة الملتقى
                 </a>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>جميع الحقوق محفوظة &copy; 2026 - جامعة تمنراست</p>
+    <footer class="bg-stone-100 py-10 border-t border-stone-200">
+        <div class="container mx-auto px-6 text-center text-gray-500 text-sm italic">
+            جميع الحقوق محفوظة - مخبر الممارسات اللغوية والأدبية - جامعة تامنغست 2026
         </div>
     </footer>
 
+    <script>
+        console.log("تم تحميل موقع الملتقى الوطني بنجاح.");
+    </script>
 </body>
 
 </html>
